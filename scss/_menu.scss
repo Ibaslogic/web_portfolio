@@ -9,11 +9,11 @@
   @include easeOut;
 
   .btn-line { 
-    width: 28px;
+    width: 28px; 
     height: 3px;
     margin: 0 0 5px 0;
-    background:  #fff;
-    @include easeOut;   
+    background: set-text-color($primary-color);
+    @include easeOut;    
   }
 
   //Rotate Into X with Menu Lines
@@ -88,6 +88,8 @@
       border-radius: 50%;
       border: 3px solid $secondary-color;
       background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
     }
   }
 
@@ -112,7 +114,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     @include easeOut;
 
     &:hover {
